@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @org.springframework.stereotype.Controller
 public class Controller {
+    @GetMapping("/")
+    public void index(Model model){
+        algorithmForm(model);
+    }
 
     @GetMapping("/algorithm")
     public String algorithmForm(Model model){
