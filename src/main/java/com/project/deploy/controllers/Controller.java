@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 @org.springframework.stereotype.Controller
 public class Controller {
     @GetMapping("/")
-    public void index(Model model){
-        algorithmForm(model);
+    public String index(Model model){
+        Algorithm algorithm = new Algorithm();
+        model.addAttribute("algorithm", algorithm);
+        return "algorithm";
     }
 
     @GetMapping("/algorithm")
