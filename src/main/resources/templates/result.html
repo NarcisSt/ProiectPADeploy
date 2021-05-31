@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Test Address</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{/styles/style.css}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+</head>
+<body class="backgroundImg">
+<nav>
+    <p>Correct Address</p>
+</nav>
+<main class="transparentBox">
+    <h1>Result</h1>
+    <p th:text="'Country: ' + ${algorithm.correctAddress.get(0)}"/>
+    <p th:text="'City: ' + ${algorithm.correctAddress.get(1)}"/>
+    <p th:text="'Locality: ' + ${algorithm.correctAddress.get(2)}"/>
+    <a href="/algorithm">Submit another address</a>
+</main>
+</body>
+</html>

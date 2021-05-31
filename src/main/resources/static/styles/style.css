@@ -1,0 +1,44 @@
+nav {
+    background-color: darkblue;
+    font-family: Goblin One, cursive;
+    opacity: 1;
+    top: 0;
+    width: 100%;
+}
+
+nav p {
+    padding: 5px 10px;;
+    color: #f2d5cf;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.backgroundImg {
+    background-image: url("../images/map.png");
+    background-size: cover;
+}
+
+.transparentBox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+.transparentBox p {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.transparentBox a{
+    font-weight: bold;
+    color: red;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
