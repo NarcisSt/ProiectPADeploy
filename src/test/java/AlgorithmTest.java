@@ -57,4 +57,16 @@ class AlgorithmTest {
         assertEquals("test123", normalized);
     }
 
+    @Test
+    void given_wordIstanbul_when_normalize_then_shouldBeNormalized() {
+        //Arrange
+        String word = "İstanbul";
+        Algorithm algorithm = new Algorithm();
+
+        //Act
+        String normalized = algorithm.normalize(word);
+
+        //Assert
+        assertEquals("istanbul", normalized);
+    }
 }
