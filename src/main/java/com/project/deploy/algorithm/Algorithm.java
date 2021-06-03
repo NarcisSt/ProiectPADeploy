@@ -94,7 +94,7 @@ public class Algorithm extends Graph {
             }
         }
         if (!find) {
-            correctAddress.add("Romania");
+            correctAddress.add("unknown");
         }
 
     }
