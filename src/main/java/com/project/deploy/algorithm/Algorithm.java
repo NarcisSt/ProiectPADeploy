@@ -208,4 +208,15 @@ public class Algorithm extends Graph {
         }
         return findLoc;
     }
+
+    @Override
+    public String toString() {
+        return "Algorithm{" +
+                "field1=" + Arrays.toString(field1) +
+                ", field2=" + Arrays.toString(field2) +
+                ", field3=" + Arrays.toString(field3) +
+                ", field4=" + Arrays.toString(field4) +
+                ", field5=" + Arrays.toString(field5) +
+                '}';
+    }
 }
