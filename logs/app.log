@@ -1,0 +1,4 @@
+[INFO ] 2021-06-05 23:19:22.149 [http-nio-8081-exec-4] Controller - 
+ NEW ADDRESS: 
+[INFO ] 2021-06-05 23:19:22.160 [http-nio-8081-exec-4] Controller - Algorithm{field1=[], field2=[Iasi, Campus Târgușor Copou, Strada Locotenent Stoicescu 1], field3=[], field4=[700496], field5=[Romania]}
+[INFO ] 2021-06-05 23:19:22.163 [http-nio-8081-exec-4] Controller - [Romania, Iasi, unknown]

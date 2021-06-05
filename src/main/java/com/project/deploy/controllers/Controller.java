@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @org.springframework.stereotype.Controller
 public class Controller {
-    private static final Logger parentLogger = LogManager.getLogger();
-    private Logger logger = parentLogger;
+    private static final Logger logger = LogManager.getLogger(Controller.class);
 
     @GetMapping("/")
     public String index(Model model){
+
         Algorithm algorithm = new Algorithm();
         model.addAttribute("algorithm", algorithm);
         return "algorithm";
