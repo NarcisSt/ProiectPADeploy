@@ -1,10 +1,10 @@
-#Proiect Proagramare Avansata 2021
+# Proiect Proagramare Avansata 2021
 
 Autori: Narcis Stefan Barat and Maria Gabriela Coteanu
 
-###Cerinta:
+### Cerinta:
 
-####Correct an address
+#### Correct an address
 - Write an algorithm that corrects the fields country, state, city of a postal
   address. Example: Country: RO, State: New York, City: Iasi will become
   Country: RO, State: Iasi, City: Iasi
@@ -19,15 +19,15 @@ Autori: Narcis Stefan Barat and Maria Gabriela Coteanu
   
 
 
-####Pentru a rula aplicatia local, trebuie rulat serverul, si deschis portul dat in orice browser.
+#### Pentru a rula aplicatia local, trebuie rulat serverul, si deschis portul dat in orice browser.
 
-#####De asemenea, aplicatia este si incarcata in cloud, la adresa: https://correct-adress.herokuapp.com.
+##### De asemenea, aplicatia este si incarcata in cloud, la adresa: https://correct-adress.herokuapp.com.
 
-#####Linkul catre documentatia generata cu swagger: http://localhost:8081/swagger-ui.html
+##### Linkul catre documentatia generata cu swagger: http://localhost:8081/swagger-ui.html
 
-#####In fiserul "app.log" din directorul "logs" sunt pastrate rezultatele tuturor rularilor.
+##### In fiserul "app.log" din directorul "logs" sunt pastrate rezultatele tuturor rularilor.
 
-###Snippets
+### Snippets
 
 ![img.png](img.png)
 
