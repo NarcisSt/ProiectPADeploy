@@ -10,6 +10,14 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 @EqualsAndHashCode
+/**
+ * this class is creating the map of countries from world
+ *
+ * i take from file every line and i put it in map
+ * one line is this kind: Country//(RO/US/... )//City//Locality
+ * because i want to accept and the lower format of country
+ * the map is of type: Map /<Country, Map/<City,Locality/> />
+ */
 public class Graph {
     protected HashMap<String, HashMap<String, ArrayList<String>>> terra = new HashMap<>();
 
@@ -17,6 +25,10 @@ public class Graph {
         readFile();
     }
 
+    /**
+     * i made it public to call it different from the class constructor
+     * i read file and every line and pass it to next function to addToMap
+     */
     public void readFile(){
         try{
             File database = new File(System.getProperty("user.dir") + "//src//main//resources//world.txt");
@@ -32,6 +44,21 @@ public class Graph {
 
     }
 
+    /**
+     * for every line i read ->
+     * i split after //
+     * the first two words are the country -> Romania, RO
+     * then is the city from country
+     * and the last one is the locality from city
+     *
+     * ->first i normalize every word in lower and no accents
+     * ->then i put every word in his place:
+     *       --> the country as key for terra Map
+     *       --> the city as key on country's map
+     *       ->> locality as value on country's map
+     *
+     * @param line --> the line read from file
+     */
     private void addToMap(String line) {
         String[] info = line.split("//");
         for(int i=0; i< info.length;i++)
